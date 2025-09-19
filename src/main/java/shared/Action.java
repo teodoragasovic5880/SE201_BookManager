@@ -1,0 +1,14 @@
+package shared;
+
+public enum Action
+{
+    GET_ENTITY_BY_ID,
+    GET_BOOKS,
+    ADD_BOOK,
+    UPDATE_BOOK,
+    DELETE_BOOK,
+    READ_ALL_BOOKS_SORTED,
+    SEARCH_BOOKS_BY_TITLE_SORTED,
+    GET_BOOK_COUNT_BY_CATEGORY,
+    EXIT,
+}
