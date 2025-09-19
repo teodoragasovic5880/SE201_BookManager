@@ -1,13 +1,14 @@
 module com.example.se201_bookmanager {
-    requires javafx.controls;
+    requires jakarta.persistence;
+    requires org.hibernate.orm.core;
     requires javafx.fxml;
+    requires javafx.graphics;
+    requires javafx.controls;
+    requires java.desktop;
+    requires java.compiler;
+    requires org.jsoup;
 
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires com.almasb.fxgl.all;
+    opens server.models to org.hibernate.orm.core;
 
     opens com.example.se201_bookmanager to javafx.fxml;
     exports com.example.se201_bookmanager;
