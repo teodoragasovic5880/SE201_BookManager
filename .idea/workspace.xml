@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Initial setup..">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/MainClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/MainServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/models/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/models/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/models/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/models/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/models/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Added Hibernate entity classes which reflect database structure.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +46,9 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="a29822c1-fa00-4807-8df7-5157c4170de9" />
+  </component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/teodoragasovic5880/SE201_BookManager.git",
@@ -88,7 +79,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/java/server"
+    "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/java/server",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -117,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758291396884</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Hibernate entity classes which reflect database structure.">
+      <option name="closed" value="true" />
+      <created>1758292502340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758292502340</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +133,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup.." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial setup.." />
+    <MESSAGE value="Added Hibernate entity classes which reflect database structure." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Hibernate entity classes which reflect database structure." />
   </component>
 </project>
