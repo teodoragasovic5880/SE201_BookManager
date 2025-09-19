@@ -49,13 +49,13 @@ public class MainPageController
             AnchorPane.setLeftAnchor(buttons, 0.0);
             AnchorPane.setRightAnchor(buttons, 0.0);
 
-            ////Ista postavka i za pocetni sadrzaj
-            //Parent initialContent = FXMLLoader.load(getClass().getResource("/views/kanbanPage.fxml"));
-            //contentPane.getChildren().setAll(initialContent);
-            //AnchorPane.setTopAnchor(initialContent, 0.0);
-            //AnchorPane.setBottomAnchor(initialContent, 0.0);
-            //AnchorPane.setLeftAnchor(initialContent, 0.0);
-            //AnchorPane.setRightAnchor(initialContent, 0.0);
+            //Ista postavka i za pocetni sadrzaj
+            Parent initialContent = FXMLLoader.load(getClass().getResource("/views/kanbanPage.fxml"));
+            contentPane.getChildren().setAll(initialContent);
+            AnchorPane.setTopAnchor(initialContent, 0.0);
+            AnchorPane.setBottomAnchor(initialContent, 0.0);
+            AnchorPane.setLeftAnchor(initialContent, 0.0);
+            AnchorPane.setRightAnchor(initialContent, 0.0);
 
         } catch (IOException e)
         {
