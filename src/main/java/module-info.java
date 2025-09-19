@@ -12,4 +12,7 @@ module com.example.se201_bookmanager {
 
     opens com.example.se201_bookmanager to javafx.fxml;
     exports com.example.se201_bookmanager;
+
+    exports client;
+    opens client.controllers to javafx.fxml;
 }

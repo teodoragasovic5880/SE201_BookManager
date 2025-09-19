@@ -1,22 +1,33 @@
 package server;
 
+import server.dao.BookDAO;
+import server.util.ClientHandler;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class MainServer
 {
-    public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/books"; // replace with your DB name
-        String user = "root"; // MySQL username
-        String password = ""; // MySQL password
+    public static void main(String[] args)
+    {
+        try (ServerSocket serverSocket = new ServerSocket(5555))
+        {
+            System.out.println("Server started on port 5555");
 
-        try (Connection conn = DriverManager.getConnection(url, user, password)) {
-            if (conn != null) {
-                System.out.println("Connected to the MySQL database!");
-            }
-        } catch (SQLException e) {
-            System.out.println("Connection failed: " + e.getMessage());
+            Socket clientSocket = serverSocket.accept();
+            ClientHandler handler = new ClientHandler(clientSocket, new BookDAO());
+
+            handler.handleClient();
+            System.out.println("Client connected " + clientSocket.getInetAddress());
+
+        } catch (IOException e)
+        {
+            e.printStackTrace();
         }
     }
 }
+

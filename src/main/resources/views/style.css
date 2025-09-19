@@ -1,0 +1,246 @@
+.background {
+    -fx-background-image: url("background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: 100% 100%;
+}
+
+.headerColumn
+{
+    -fx-background-color: rgba(224, 224, 224, 0.2);
+    -fx-background-radius:20px 20px  1px 1px ;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 19, 0.1, 0, 9);
+}
+
+.listViewBox
+{
+    -fx-background-color: rgba(224, 224, 224, 0.4);
+    -fx-background-radius:1px 1px 20px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 19, 0.1, 0, 9);
+}
+
+.headerText
+{
+    -fx-font-family: "Georgia", serif;
+    -fx-font-size: 26;
+    -fx-font-weight: bold;
+    -fx-fill: "#ffffff";
+}
+
+.split-pane > .split-pane-divider {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.buttonNoFill {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20;
+    -fx-background-color: transparent;
+    -fx-border-color: "#d4fecc";
+    -fx-border-width: 2;
+    -fx-border-radius: 35;
+    -fx-background-radius: 35;
+    -fx-pref-width: 185;
+    -fx-pref-height: 20;
+    -fx-text-fill: "#d4fecc";
+    -fx-font-weight: 600;
+}
+
+.buttonNoFillDisabled {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20;
+    -fx-background-color: transparent;
+    -fx-border-color: "#d4fecc";
+    -fx-border-width: 2;
+    -fx-border-radius: 35;
+    -fx-background-radius: 35;
+    -fx-pref-width: 185;
+    -fx-pref-height: 20;
+    -fx-text-fill: "#d4fecc";
+    -fx-font-weight: 600;
+    -fx-opacity: 40%;
+}
+
+.buttonNoFill2 {
+    -fx-font-family: "Verdana";
+    -fx-font-size: 15;
+    -fx-background-color: transparent;
+    -fx-border-color: "#d4fecc";
+    -fx-border-width: 2;
+    -fx-border-radius: 35;
+    -fx-background-radius: 35;
+    -fx-pref-width: 170;
+    -fx-pref-height: 15;
+    -fx-text-fill: "#d4fecc";
+    -fx-font-weight: 700;
+}
+
+.bookCard {
+    -fx-background-color: rgba(224, 224, 224, 0.2);
+    -fx-padding: 15;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5, 0.1, 0, 2);
+    -fx-min-height: 140;
+    -fx-max-width: 100%; /* Allow full width of container */
+}
+.bookCardTitle {
+    -fx-font-family: "Georgia", serif;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+
+}
+
+.bookCardAuthor {
+    -fx-font-family: "Passion One Bold", serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+
+/* Optional: constrain image max width if needed */
+.bookCard ImageView {
+    -fx-fit-height: 120;
+    -fx-preserve-ratio: true;
+    -fx-smooth: true;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0.1, 0, 1);
+}
+
+.labelView
+{
+    -fx-font-family: "Georgia", serif;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill:"#d4fecc";
+}
+
+.labelForm
+{
+    -fx-font-family: "Georgia", serif;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill:"#d4fecc";
+}
+
+.textField
+{
+    -fx-font-size: 13px;
+    -fx-border-color: "#dab9ff";
+    -fx-border-radius: 25;
+    -fx-border-width: 3;
+    -fx-background-radius: 25;
+    -fx-background-color: rgba(224, 224, 224, 0.2);
+    -fx-max-width: 400;
+}
+
+.combo-box {
+    -fx-font-size: 13px;
+    -fx-border-color: "#dab9ff";
+    -fx-border-radius: 25;
+    -fx-border-width: 3;
+    -fx-background-radius: 25;
+    -fx-background-color: rgba(224, 224, 224, 0.2);
+}
+
+.date-picker {
+    -fx-background-color: transparent;
+    -fx-border-color: "#dab9ff";
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.date-picker > .text-field {
+    -fx-background-color: "#dab9ff";
+    -fx-padding: 6 8 6 8;
+
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: "#dab9ff";
+    -fx-background-radius: 0 5 5 0;
+}
+
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color: white;
+    -fx-background-scale: 120% 120%;
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+}
+.combo-box > .arrow-button > .arrow {
+    -fx-background-color: white;
+    -fx-background-scale: 120% 120%;
+}
+
+.errorForm
+{
+    -fx-font-family: "Verdana";
+    -fx-font-size: 16;
+    -fx-fill: "#f23b2e";
+    -fx-font-weight: 800;
+}
+
+.formVBox
+{
+    -fx-background-radius: 25;
+    -fx-background-color: rgba(224, 224, 224, 0.4);
+}
+
+.submitButton
+{
+    -fx-font-family: "Verdana";
+    -fx-font-size: 20;
+    -fx-background-color: "#d4fecc";
+    -fx-border-color: "#d4fecc";
+    -fx-border-width: 2;
+    -fx-border-radius: 35;
+    -fx-background-radius: 35;
+    -fx-pref-width: 185;
+    -fx-pref-height: 20;
+    -fx-text-fill: "white";
+    -fx-font-weight: 600;
+}
+
+.bookListItem
+{
+    -fx-font-family: "Georgia", serif;
+    -fx-font-size: 14;
+    -fx-fill: "black";
+}
+
+.chart-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+
+.deleteButton
+{
+    fx-font-family: "Georgia", serif;
+    -fx-font-size: 15;
+    -fx-background-color: rgba(224, 224, 224, 0.4);
+    -fx-border-color: "#9b1e2e";
+    -fx-border-width: 2;
+    -fx-border-radius: 35;
+    -fx-background-radius: 35;
+    -fx-pref-width: 170;
+    -fx-pref-height: 15;
+    -fx-text-fill: "#9b1e2e";
+    -fx-font-weight: 700;
+}
+
+.topBookBox
+{
+    -fx-background-color: rgba(224, 224, 224, 0.4);
+    -fx-background-radius:20px 20px 20px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 19, 0.1, 0, 9);
+    fx-font-family: "Georgia", serif;
+    -fx-font-size: 15;
+}
+

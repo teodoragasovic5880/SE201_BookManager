@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Added Hibernate entity classes which reflect database structure.">
+    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Implemented helper classes for handling database requests from client(ClientHandler and ClientService).">
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/MainPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/MenuButtonsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/Refreshable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/mainPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/menuButtons.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/MainServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +76,9 @@
   "associatedIndex": 7
 }]]></component>
   <component name="ProjectId" id="32vBeQbwZzpwXDXINCEIwQ7lptj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,17 +91,22 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/java/server",
+    "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/resources/views",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\resources\views" />
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\resources" />
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java\client\controllers" />
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java" />
       <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java\server" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="server" />
+      <recent name="client.controllers" />
       <recent name="client" />
+      <recent name="server" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -117,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758292502340</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added DAOs(basic CRUD operations) and DTOs.">
+      <option name="closed" value="true" />
+      <created>1758292893046</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758292893046</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented helper classes for handling database requests from client(ClientHandler and ClientService).">
+      <option name="closed" value="true" />
+      <created>1758293071263</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758293071263</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +167,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup.." />
     <MESSAGE value="Added Hibernate entity classes which reflect database structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Hibernate entity classes which reflect database structure." />
+    <MESSAGE value="Added DAOs(basic CRUD operations) and DTOs." />
+    <MESSAGE value="Implemented helper classes for handling database requests from client(ClientHandler and ClientService)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented helper classes for handling database requests from client(ClientHandler and ClientService)." />
   </component>
 </project>
