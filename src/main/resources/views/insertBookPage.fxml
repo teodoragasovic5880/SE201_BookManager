@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.InsertBookPageController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="571.0" layoutY="129.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="1000.0" spacing="5.0" styleClass="formVBox" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerText" text="〰 NEW BOOK 〰" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="labelForm" text="Book Title: " />
+                              <TextField fx:id="titleField" styleClass="textField" HBox.hgrow="ALWAYS" />
+                              <Text fx:id="titleErrorLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errorForm" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="130.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="labelForm" text="Author Name:" />
+                              <TextField fx:id="authorNameField" styleClass="textField" HBox.hgrow="ALWAYS" />
+                              <Text fx:id="authorNameErrorLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errorForm" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="230.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="labelForm" text="Author Surname:: " />
+                              <TextField fx:id="authorSurnameField" styleClass="textField" HBox.hgrow="ALWAYS" />
+                              <Text fx:id="authorSurnameErrorLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errorForm" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="330.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="labelForm" text="Author Date of Birth: " />
+                              <DatePicker fx:id="authorDobPicker" />
+                              <Text fx:id="authorDobErrorLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errorForm" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="280.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="labelForm" text="Category: " />
+                              <TextField fx:id="categoryField" styleClass="textField" HBox.hgrow="ALWAYS" />
+                              <Text fx:id="categoryErrorLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errorForm" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="483.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="labelForm" text="Cover Image Path: " />
+                              <TextField fx:id="imagePathField" styleClass="textField" />
+                              <Text fx:id="imagePathErrorLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errorForm" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="330.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label styleClass="labelForm" text="Status: " />
+                              <ComboBox fx:id="statusComboBox" prefWidth="150.0" />
+                              <Text fx:id="statusErrorLabel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errorForm" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleSubmit" styleClass="submitButton" text="Button" textAlignment="CENTER" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>
