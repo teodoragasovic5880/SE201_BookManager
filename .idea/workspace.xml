@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Implemented helper classes for handling database requests from client(ClientHandler and ClientService).">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/MainPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/MenuButtonsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/Refreshable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/mainPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/menuButtons.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/views/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/MainClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/MainServer.java" afterDir="false" />
+    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Setup main window and content pane for pages(added .fxmls and controllers).">
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/BookCardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/KanbanPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/bookCard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/views/kanbanPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +16,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -40,12 +38,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1758291356" />
+                    <option name="branchName" value="feature/kanban-page" />
+                    <option name="lastUsedInstant" value="1758294247" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1758291355" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1758291356" />
                   </RecentBranch>
                 </list>
               </option>
@@ -89,7 +87,7 @@
     "Application.MainServer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/kanban-page",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/resources/views",
     "settings.editor.selected.configurable": "vcs.Git"
@@ -98,8 +96,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\resources\views" />
-      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\resources" />
       <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java\client\controllers" />
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\resources" />
       <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java" />
       <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java\server" />
     </key>
@@ -150,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758293071263</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Setup main window and content pane for pages(added .fxmls and controllers).">
+      <option name="closed" value="true" />
+      <created>1758294220974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758294220974</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,7 +164,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/kanban-page" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -169,6 +187,7 @@
     <MESSAGE value="Added Hibernate entity classes which reflect database structure." />
     <MESSAGE value="Added DAOs(basic CRUD operations) and DTOs." />
     <MESSAGE value="Implemented helper classes for handling database requests from client(ClientHandler and ClientService)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented helper classes for handling database requests from client(ClientHandler and ClientService)." />
+    <MESSAGE value="Setup main window and content pane for pages(added .fxmls and controllers)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup main window and content pane for pages(added .fxmls and controllers)." />
   </component>
 </project>
