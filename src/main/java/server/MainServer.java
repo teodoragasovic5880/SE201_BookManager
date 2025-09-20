@@ -1,6 +1,7 @@
 package server;
 
 import server.dao.BookDAO;
+import server.service.BookService;
 import server.util.ClientHandler;
 
 import java.io.IOException;
@@ -19,7 +20,7 @@ public class MainServer
             System.out.println("Server started on port 5555");
 
             Socket clientSocket = serverSocket.accept();
-            ClientHandler handler = new ClientHandler(clientSocket, new BookDAO());
+            ClientHandler handler = new ClientHandler(clientSocket, new BookService(new BookDAO()));
 
             handler.handleClient();
             System.out.println("Client connected " + clientSocket.getInetAddress());

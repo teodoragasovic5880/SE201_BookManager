@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Setup main window and content pane for pages(added .fxmls and controllers).">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/OpenLibraryScraper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/controllers/StatisticsPageController.java" afterDir="false" />
+    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Simplified ClientHandler to use BookService functions.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/master.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/MainServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/util/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/util/ClientHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +96,7 @@
     "Application.MainServer.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/statistics-page",
+    "git-widget-placeholder": "Merging main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/resources/views",
     "settings.editor.selected.configurable": "vcs.Git"
@@ -203,6 +206,7 @@
     <MESSAGE value="Implemented helper classes for handling database requests from client(ClientHandler and ClientService)." />
     <MESSAGE value="Setup main window and content pane for pages(added .fxmls and controllers)." />
     <MESSAGE value="Added page with list of all books, with ascending/descending filter and search bar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added page with list of all books, with ascending/descending filter and search bar." />
+    <MESSAGE value="Simplified ClientHandler to use BookService functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplified ClientHandler to use BookService functions." />
   </component>
 </project>
