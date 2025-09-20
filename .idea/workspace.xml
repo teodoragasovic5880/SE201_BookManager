@@ -4,23 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Added Hibernate entity classes which reflect database structure.">
+    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Added page with list of all books, with ascending/descending filter and search bar.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/master.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/util/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/util/ClientHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Sequence" />
+        <option value="UML Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "teodoragasovic5880"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;teodoragasovic5880&quot;
   }
-}]]></component>
+}</component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
       <RecentBranches>
@@ -30,12 +47,24 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1758291356" />
+                    <option name="branchName" value="database-fix" />
+                    <option name="lastUsedInstant" value="1758357490" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1758291355" />
+                    <option name="branchName" value="feature/statistics-page" />
+                    <option name="lastUsedInstant" value="1758298147" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1758297200" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/booklist-page" />
+                    <option name="lastUsedInstant" value="1758296780" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/kanban-page" />
+                    <option name="lastUsedInstant" value="1758294247" />
                   </RecentBranch>
                 </list>
               </option>
@@ -49,12 +78,12 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="a29822c1-fa00-4807-8df7-5157c4170de9" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/teodoragasovic5880/SE201_BookManager.git",
-    "accountId": "a29822c1-fa00-4807-8df7-5157c4170de9"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/teodoragasovic5880/SE201_BookManager.git&quot;,
+    &quot;accountId&quot;: &quot;a29822c1-fa00-4807-8df7-5157c4170de9&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -62,11 +91,16 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="32vBeQbwZzpwXDXINCEIwQ7lptj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -75,21 +109,31 @@
   "keyToString": {
     "Application.MainClient.executor": "Run",
     "Application.MainServer.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Class",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "database-fix",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/java/server",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/java/client/dto",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\resources\views" />
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java\client\controllers" />
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\resources" />
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java" />
       <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java\server" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java" />
+      <recent name="C:\Users\teodo\IdeaProjects\SE201_BookManager\src\main\java\shared" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="server" />
       <recent name="client" />
+      <recent name="client.controllers" />
+      <recent name="server" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -117,7 +161,39 @@
       <option name="project" value="LOCAL" />
       <updated>1758292502340</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added DAOs(basic CRUD operations) and DTOs.">
+      <option name="closed" value="true" />
+      <created>1758292893046</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758292893046</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented helper classes for handling database requests from client(ClientHandler and ClientService).">
+      <option name="closed" value="true" />
+      <created>1758293071263</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758293071263</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Setup main window and content pane for pages(added .fxmls and controllers).">
+      <option name="closed" value="true" />
+      <created>1758294220974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1758294220974</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added page with list of all books, with ascending/descending filter and search bar.">
+      <option name="closed" value="true" />
+      <created>1758297154691</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1758297154691</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,7 +201,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -134,6 +222,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup.." />
     <MESSAGE value="Added Hibernate entity classes which reflect database structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Hibernate entity classes which reflect database structure." />
+    <MESSAGE value="Added DAOs(basic CRUD operations) and DTOs." />
+    <MESSAGE value="Implemented helper classes for handling database requests from client(ClientHandler and ClientService)." />
+    <MESSAGE value="Setup main window and content pane for pages(added .fxmls and controllers)." />
+    <MESSAGE value="Added page with list of all books, with ascending/descending filter and search bar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added page with list of all books, with ascending/descending filter and search bar." />
   </component>
 </project>
