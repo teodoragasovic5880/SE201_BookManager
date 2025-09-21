@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Configured changes.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/service/ReviewService.java" afterDir="false" />
+    <list default="true" id="b3e94f2f-a337-461a-9e87-1959f287ff3a" name="Changes" comment="Fixed issue of reviews not showing up on the page for all books.">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/controllers/BookCellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/controllers/BookCellController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/controllers/InsertBookPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/controllers/InsertBookPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/util/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/util/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/bookCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/bookCell.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/views/insertBookPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/views/insertBookPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sqlinjectiondemo/UnsafeBookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sqlinjectiondemo/UnsafeBookDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +62,12 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/teodoragasovic5880/SE201_BookManager.git&quot;,
-    &quot;accountId&quot;: &quot;a29822c1-fa00-4807-8df7-5157c4170de9&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/teodoragasovic5880/SE201_BookManager.git",
+    "accountId": "143a82e9-3d8e-4567-af94-93944844b83d"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -101,7 +95,7 @@
     "JUnit.BookServiceTest.testSearchBooks.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "613e4a5e",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/teodo/IdeaProjects/SE201_BookManager/src/main/resources/views",
     "node.js.detected.package.eslint": "true",
@@ -109,7 +103,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -171,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758291261826</updated>
-      <workItem from="1758474869904" duration="3148000" />
+      <workItem from="1758474869904" duration="6843000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup..">
       <option name="closed" value="true" />
@@ -221,7 +215,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758297154691</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added unsafe SQL demonstration DAO class, and a button to insert book page that will submit to demo database.">
+      <option name="closed" value="true" />
+      <created>1758479230906</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1758479230906</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added JUnit tests.">
+      <option name="closed" value="true" />
+      <created>1758479281397</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1758479281397</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed issue of reviews not showing up on the page for all books.">
+      <option name="closed" value="true" />
+      <created>1758479316603</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1758479316603</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +264,13 @@
     <MESSAGE value="Setup main window and content pane for pages(added .fxmls and controllers)." />
     <MESSAGE value="Added page with list of all books, with ascending/descending filter and search bar." />
     <MESSAGE value="Simplified ClientHandler to use BookService functions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplified ClientHandler to use BookService functions." />
+    <MESSAGE value="Added unsafe SQL demonstration DAO class, and a button to insert book page that will submit to demo database." />
+    <MESSAGE value="Added JUnit tests." />
+    <MESSAGE value="Fixed issue of reviews not showing up on the page for all books." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue of reviews not showing up on the page for all books." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
