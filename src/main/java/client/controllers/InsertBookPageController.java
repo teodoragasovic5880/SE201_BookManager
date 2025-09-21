@@ -11,8 +11,10 @@ import javafx.scene.text.Text;
 import shared.Action;
 import shared.Request;
 import shared.Response;
+import sqlinjectiondemo.UnsafeBookDAO;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -149,6 +151,28 @@ public class InsertBookPageController
             System.out.println("Communication error with server");
         }
     }
+
+    @FXML
+    private void handleSubmitUnsafe() {
+        // Read fields directly (no validation here — intentional for demo)
+        String title = titleField.getText();
+        String authorName = authorNameField.getText();
+        String authorSurname = authorSurnameField.getText();
+        String authorFull = (authorName == null ? "" : authorName) + " " + (authorSurname == null ? "" : authorSurname);
+        String category = categoryField.getText();
+        String imagePath = imagePathField.getText();
+
+        try {
+            UnsafeBookDAO dao = new UnsafeBookDAO();
+            dao.init(); // ensure table exists
+            dao.addBookUnsafe(title, authorFull, category, imagePath);
+            System.out.println("Unsafe demo: statement executed. Check DB and console for SQL printed by DAO.");
+        } catch (SQLException e) {
+            System.err.println("Unsafe demo failed: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
 
     private void clearForm() {
         titleField.clear();

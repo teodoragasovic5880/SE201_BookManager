@@ -106,6 +106,7 @@
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                            <children>
+                              <Button text="Submit Demo" onAction="#handleSubmitUnsafe"/>
                               <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleSubmit" styleClass="submitButton" text="Button" textAlignment="CENTER" />
                            </children>
                         </HBox>
