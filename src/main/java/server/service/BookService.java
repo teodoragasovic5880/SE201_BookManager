@@ -1,6 +1,7 @@
 package server.service;
 import client.dto.*;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import server.dao.*;
 import server.models.*;
@@ -17,12 +18,18 @@ public class BookService {
     private AuthorDAO authorDao;
     private CategoryDAO categoryDao;
     private StatusDAO statusDao;
+    private final SessionFactory sessionFactory;
 
     public BookService(BookDAO bookDao) {
+        this(bookDao, new AuthorDAO(), new CategoryDAO(), new StatusDAO(), HibernateUtil.getSessionFactory());
+    }
+    public BookService(BookDAO bookDao, AuthorDAO authorDao, CategoryDAO categoryDao,
+                       StatusDAO statusDao, SessionFactory sessionFactory) {
         this.bookDao = bookDao;
-        this.authorDao = new AuthorDAO();
-        this.categoryDao = new CategoryDAO();
-        this.statusDao = new StatusDAO();
+        this.authorDao = authorDao;
+        this.categoryDao = categoryDao;
+        this.statusDao = statusDao;
+        this.sessionFactory = sessionFactory;
     }
 
     public Response getAllBooks() {
@@ -48,7 +55,7 @@ public class BookService {
     }
 
     public Response readAllBooksSorted(String sortOrder) {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {  // use injected SessionFactory
             String hql = "FROM Book ORDER BY title " + sortOrder;
             List<Book> books = session.createQuery(hql, Book.class).getResultList();
             return new Response(true, convertToDtoList(books));
@@ -59,7 +66,7 @@ public class BookService {
     }
 
     public Response searchBooks(String filter, String sortOrder) {
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {  // use injected SessionFactory
             String hql = "FROM Book WHERE LOWER(title) LIKE :title ORDER BY title " + sortOrder;
             List<Book> books = session.createQuery(hql, Book.class)
                     .setParameter("title", "%" + filter.toLowerCase() + "%")
@@ -73,18 +80,15 @@ public class BookService {
 
     public Response getBookCountByCategory() {
         Map<String, Integer> categoryCounts = new HashMap<>();
-        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {  // use injected SessionFactory
             String hql = "SELECT c.categoryName, COUNT(b) FROM Book b JOIN b.category c GROUP BY c.categoryName";
             List<Object[]> results = session.createQuery(hql).list();
-
             for (Object[] row : results) {
                 String categoryName = (String) row[0];
                 Long count = (Long) row[1];
                 categoryCounts.put(categoryName, count.intValue());
             }
-
             return new Response(true, categoryCounts);
-
         } catch (Exception e) {
             e.printStackTrace();
             return new Response(false, "Failed to get book counts by category");

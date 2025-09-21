@@ -48,6 +48,14 @@ public class ClientHandler {
         this.statusDao = new StatusDAO();
     }
 
+    public ClientHandler(Socket clientSocket, BookService bookService, AuthorDAO authorDao, CategoryDAO categoryDao, StatusDAO statusDao) {
+        this.clientSocket = clientSocket;
+        this.bookService = bookService;
+        this.authorDao = authorDao;
+        this.categoryDao = categoryDao;
+        this.statusDao = statusDao;
+    }
+
     public void handleClient() {
         try (
                 ObjectOutputStream output = new ObjectOutputStream(clientSocket.getOutputStream());

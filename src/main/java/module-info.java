@@ -15,4 +15,9 @@ module com.example.se201_bookmanager {
 
     exports client;
     opens client.controllers to javafx.fxml;
+    exports client.dto;
+    exports server.models;
+    exports server.dao;
+    exports server.service;
+    exports shared;
 }
